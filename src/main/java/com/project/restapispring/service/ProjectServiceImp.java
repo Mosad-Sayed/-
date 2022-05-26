@@ -29,7 +29,7 @@ public class ProjectServiceImp implements ProjectService {
 
 	@Override
 	public ResponseEntity<?> save(Project Project) {
-		return new ResponseEntity<Project>(projectDao.save(Project), HttpStatus.OK);
+		return new ResponseEntity<Project>(projectDao.save(Project), HttpStatus.CREATED);
 
 	}
 

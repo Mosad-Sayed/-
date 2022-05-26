@@ -30,7 +30,7 @@ public class StudentServiceImp implements StudentService {
 
 	@Override
 	public ResponseEntity<?> save(Student student) {
-		return new ResponseEntity<Student>(studentDao.save(student), HttpStatus.OK);
+		return new ResponseEntity<Student>(studentDao.save(student), HttpStatus.CREATED);
 
 	}
 
